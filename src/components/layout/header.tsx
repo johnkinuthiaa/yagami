@@ -2,19 +2,17 @@
 import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 
 const Header =()=>{
     const pathname =usePathname()
     return(
         <header className={"w-full flex items-center justify-between"}>
-            <a href={"/a"}>
-                <Image
-                    alt={"yagami"}
-                    src={"/yagami.jpeg"}
-                    width={1000}
-                    height={1000}
-                    className={"w-14 h-14 rounded-full"}
-                />
+            <a href={"/"}>
+                <Avatar>
+                    <AvatarImage src={"/yagami.jpeg"} />
+                    <AvatarFallback>LY</AvatarFallback>
+                </Avatar>
             </a>
             <nav className={"inline-block px-3"}>
                 <ul className={"flex gap-4 ]"}>

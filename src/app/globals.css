@@ -134,5 +134,7 @@
     div::selection{
         @apply bg-[#8E4EC6] text-[#EEEEEE]
     }
-
+    strong{
+        @apply text-[#1FD8A4]
+    }
 }

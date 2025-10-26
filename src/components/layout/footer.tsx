@@ -1,20 +1,24 @@
 "use client"
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {Separator} from "@/components/ui/separator";
 
 const Footer =()=>{
-    const[date,setDate] =useState("")
-    setInterval(()=>{
-        setDate(new Date().toString())
-    },1000)
+    const[date,setDate] =useState(new Date().toString())
+    useEffect(()=>{
+        setInterval(()=>{
+            setDate(new Date().toString())
+        },1000)
+    },[])
+
     return(
         <footer className={"font-mono text-[#7B7B7B] text-sm flex flex-col gap-2 absolute bottom-5 px-4"}>
             <div>
-                <p>  {date.substring(0,29)} -YAGAMI SITE</p>
+                <p suppressHydrationWarning={true}>  {date.substring(0,29)}| |-YAGAMI SITE</p>
             </div>
             <div >
-                <p>LIGHT YAGAMI</p>
+                <p>LIGHT YAGAMI - <span className={"font-sans"}>All rights Reserved</span>  </p>
             </div>
-            <p className={"text-center flex gap-2 items-center w-fit "}><span className={"animate-pulse rounded-full  bg-[#3DD68C] py-1 px-1"}></span> All systems normal</p>
+            <p className={"text-center flex gap-2 items-center "}><span className={"animate-pulse rounded-full  bg-[#3DD68C] py-1 px-1"}></span> All systems normal</p>
         </footer>
     )
 }
