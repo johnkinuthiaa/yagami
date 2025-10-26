@@ -22,16 +22,16 @@ const Header =()=>{
                         <a className={cn(pathname==="/"&&"text-[#EEEEEE]")} href={"/"}>Overview</a>
                     </li>
                     <li>
-                        <a href={"/"} className={cn(pathname==="/projects"&&"text-[#EEEEEE]")} >Projects</a>
+                        <a href={"/projects"} className={cn(pathname==="/projects"&&"text-[#EEEEEE]")} >Projects</a>
                     </li>
                     <li>
-                        <a href={"/"} className={cn(pathname==="/playground"&&"text-[#EEEEEE]")}>Playground</a>
+                        <a href={"/playground"} className={cn(pathname==="/playground"&&"text-[#EEEEEE]")}>Playground</a>
                     </li>
                     <li>
-                        <a href={"/"} className={cn(pathname==="/blog"&&"text-[#EEEEEE]")}>Blog</a>
+                        <a href={"/blog"} className={cn(pathname==="/blog"&&"text-[#EEEEEE]")}>Blog</a>
                     </li>
                     <li>
-                        <a href={"/"} className={cn(pathname==="/stack"&&"text-[#EEEEEE]")}>Stack</a>
+                        <a href={"/stack"} className={cn(pathname==="/stack"&&"text-[#EEEEEE]")}>Stack</a>
                     </li>
                 </ul>
             </nav>
