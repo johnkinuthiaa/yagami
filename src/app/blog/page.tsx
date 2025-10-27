@@ -1,7 +1,12 @@
+import Posts from "@/src/components/blogs/posts";
+
 const Page =()=>{
     return(
         <div className={"w-full "}>
-            <p>page under construction</p>
+            <p>
+                my blogs
+            </p>
+            <Posts/>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 "use client"
 import {useEffect, useState} from "react";
-import {Separator} from "@/components/ui/separator";
 
 const Footer =()=>{
     const[date,setDate] =useState(new Date().toString())
@@ -11,7 +10,7 @@ const Footer =()=>{
     },[])
 
     return(
-        <footer className={"font-mono text-[#7B7B7B] text-sm flex flex-col gap-2 absolute bottom-5 px-4"}>
+        <footer className={"font-mono text-[#7B7B7B] text-sm flex flex-col gap-2 md:fixed lg:fixed relative bottom-6 px-4"}>
             <div>
                 <p suppressHydrationWarning={true}>  {date.substring(0,29)}| |-YAGAMI SITE</p>
             </div>

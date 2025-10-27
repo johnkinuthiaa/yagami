@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
 import {usePathname} from "next/navigation";
-import {cn} from "@/lib/utils";
-import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import {cn} from "@/src/lib/utils";
+import {Avatar, AvatarFallback, AvatarImage} from "@/src/components/ui/avatar";
 
 const Header =()=>{
     const pathname =usePathname()
@@ -20,16 +20,16 @@ const Header =()=>{
                         <a className={cn(pathname==="/"&&"text-[#EEEEEE]")} href={"/"}>Overview</a>
                     </li>
                     <li>
-                        <a href={"/projects"} className={cn(pathname==="/projects"&&"text-[#EEEEEE]")} >Projects</a>
+                        <a href={"/projects"} className={cn(pathname.includes("/projects")&&"text-[#EEEEEE]")} >Projects</a>
                     </li>
                     <li>
-                        <a href={"/playground"} className={cn(pathname==="/playground"&&"text-[#EEEEEE]")}>Playground</a>
+                        <a href={"/playground"} className={cn(pathname.includes("/playground")&&"text-[#EEEEEE]")}>Playground</a>
                     </li>
                     <li>
-                        <a href={"/blog"} className={cn(pathname==="/blog"&&"text-[#EEEEEE]")}>Blog</a>
+                        <a href={"/blog"} className={cn(pathname.includes("/blog")&&"text-[#EEEEEE]")}>Blog</a>
                     </li>
                     <li>
-                        <a href={"/stack"} className={cn(pathname==="/stack"&&"text-[#EEEEEE]")}>Stack</a>
+                        <a href={"/stack"} className={cn(pathname.includes("/stack")&&"text-[#EEEEEE]")}>Stack</a>
                     </li>
                 </ul>
             </nav>

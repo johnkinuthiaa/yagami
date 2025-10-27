@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {Suspense} from "react";
-import Loading from "@/app/loading";
+import Loading from "@/src/app/loading";
 
 export const metadata: Metadata = {
     title: "Yagami Stack and tools",
