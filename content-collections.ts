@@ -2,9 +2,6 @@ import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from "@content-collections/mdx";
 import { z } from "zod";
 
-// for more information on configuration, visit:
-// https://www.content-collections.dev/docs/configuration
-
 const posts = defineCollection({
   name: "posts",
   directory: "src/contents",

@@ -16,7 +16,7 @@ const AboutMe =()=>{
 
             </div>
             <div >
-                 i code 12hours a day to avoid meeting people
+                 i code 12 hours a day to avoid meeting people
             </div>
             <div className={"[&>strong]:text-[#1FD8A4]"}>
                 I am a <strong>Next.js</strong> and a <strong>Springboot</strong> lover, an <strong>anime maniac</strong> , meme connoisseur and a <strong>contributor</strong> to oss .
