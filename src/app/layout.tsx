@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} w-full flex flex-col justify-between !h-full antialiased`}
       >
-          <div className={"flex flex-col font-sans py-8 w-full md:w-[40%] my-auto items-center justify-center mx-auto"}>
+          <div className={"flex flex-col font-sans py-2 w-full md:w-[40%] my-6 items-center justify-center mx-auto"}>
               <Header/>
               <Suspense fallback={<div>Loading...</div>}>
 
