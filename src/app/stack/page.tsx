@@ -1,5 +1,4 @@
 import BackButton from "@/src/components/layout/back-button";
-import {Badge} from "@/components/ui/badge";
 import {StackData} from "@/src/constants/stackData";
 import {Fragment} from "react";
 import StackCard from "@/src/components/stack/stack-card";
@@ -11,7 +10,7 @@ const Page =()=>{
             <div className={"mt-5  leading-relaxed"}>
                 Tools,Frameworks,Languages,websites and software i use for my daily development
             </div>
-            <div className={"flex flex-wrap gap-4 mt-8"}>
+            <div className={"grid grid-cols-2 md:grid-cols-4  gap-2 mt-8"}>
                 {StackData.map((stack,index)=>(
                     <Fragment key={index}>
                         <StackCard
