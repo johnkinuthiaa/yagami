@@ -22,9 +22,9 @@ const Header =()=>{
                     <li>
                         <a href={"/projects"} className={cn(pathname.includes("/projects")&&"text-[#EEEEEE]")} >Projects</a>
                     </li>
-                    <li>
-                        <a href={"/playground"} className={cn(pathname.includes("/playground")&&"text-[#EEEEEE]")}>Playground</a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <a href={"/playground"} className={cn(pathname.includes("/playground")&&"text-[#EEEEEE]")}>Playground</a>*/}
+                    {/*</li>*/}
                     <li>
                         <a href={"/blog"} className={cn(pathname.includes("/blog")&&"text-[#EEEEEE]")}>Blog</a>
                     </li>
