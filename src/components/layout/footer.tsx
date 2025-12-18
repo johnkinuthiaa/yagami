@@ -10,7 +10,7 @@ const Footer =()=>{
     },[])
 
     return(
-        <footer className={"font-mono text-[#7B7B7B] text-sm md:flex flex-col gap-2 md:fixed lg:fixed absolute bottom-3 hidden md:bottom-6 px-4"}>
+        <footer className={"font-mono text-[#7B7B7B] text-sm md:flex items-start flex-col gap-2 md:fixed lg:fixed absolute bottom-3 hidden md:bottom-6 px-4"}>
             <div>
                 <p suppressHydrationWarning={true}>  {date.substring(0,29)}| |-YAGAMI SITE</p>
             </div>
