@@ -19,7 +19,12 @@ const Page =()=>{
     const stats:ReadingTimeStats =readingTime(post.content)
 
     return(
-        <div className={" font-sans flex flex-col gap-2 px-4"}>
+        <div
+            style={{
+                scrollBehavior:"smooth",
+                scrollbarWidth:"none"
+            }}
+            className={" font-sans flex flex-col gap-2 px-4"}>
             <div className={"mt-6"}>
                 <BackButton/>
             </div>

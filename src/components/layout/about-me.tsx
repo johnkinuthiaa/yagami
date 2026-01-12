@@ -1,7 +1,7 @@
 
 const AboutMe =()=>{
     return (
-        <div className={"mt-16 md:mt-10 flex flex-col gap-6 w-[95%] [&>*]:text-sm [&>*]:!text-[#6E6E6E] [&>*]:leading-6  md:w-[80%]"}>
+        <div className={"mt-16 md:mt-10 flex flex-col gap-6 w-[95%] *:text-sm *:text-[#6E6E6E]! *:leading-6  md:w-[80%]"}>
             <div className={"[&>strong]:text-[#1FD8A4]"}>
                 Hello there 👋, I am a Software Developer from <strong>Nairobi, Kenya</strong> .
                 Currently involved in software development and design engineering,
@@ -16,7 +16,12 @@ const AboutMe =()=>{
 
             </div>
             <div className={"[&>strong]:text-[#1FD8A4]"}>
-                I am a <strong>Next.js</strong>, <strong>React Native</strong>, <strong>Springboot</strong> lover, an <strong>anime maniac</strong> , meme connoisseur and a <strong>contributor</strong> to oss .
+                I am a
+                <strong>Next.js</strong>,
+                <strong>React Native</strong>,
+                <strong>Springboot</strong> lover, an
+                <strong>anime maniac</strong> , meme connoisseur and a
+                <strong>contributor</strong> to oss .
             </div>
             <p className={"line-through "}>Not addicted to coffee</p>
 

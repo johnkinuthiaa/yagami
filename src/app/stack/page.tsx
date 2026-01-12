@@ -5,7 +5,10 @@ import StackCard from "@/src/components/stack/stack-card";
 
 const Page =()=>{
     return(
-        <div className={"w-full px-2 flex items-start flex-col mt-6"}>
+        <div style={{
+            scrollBehavior:"smooth",
+            scrollbarWidth:"none"
+        }} className={"w-full px-2 flex items-start flex-col mt-6"}>
             <BackButton/>
             <div className={"mt-5  leading-relaxed"}>
                 Tools,Frameworks,Languages,websites and software i use for my daily development
