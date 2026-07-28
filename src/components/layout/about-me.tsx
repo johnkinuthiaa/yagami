@@ -10,6 +10,7 @@ const AboutMe =()=>{
             <div >
                 I love creating content and crafting interactive, beautiful websites in Nextjs & Typescript,
                 microservices in Java &Springboot and a bit of esp32 hobby projects using C++. 
+                <br/>
                 During my leisure time, you’ll find me watching recreational programming videos by Mr. Tsoding, sharing
                 memes on my Insta page, or listening to Prime Agen’s rants.
                 When I’m not glued to my computer,
