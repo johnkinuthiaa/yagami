@@ -8,7 +8,8 @@ const AboutMe =()=>{
                 I’m passionate about a wide spectrum of topics revolving around science and technology.
             </div>
             <div >
-                I love creating content and crafting interactive, beautiful — (and sometimes crappy) — websites.
+                I love creating content and crafting interactive, beautiful websites in Nextjs & Typescript,
+                microservices in Java &Springboot and a bit of esp32 hobby projects using C++. 
                 During my leisure time, you’ll find me watching recreational programming videos by Mr. Tsoding, sharing
                 memes on my Insta page, or listening to Prime Agen’s rants.
                 When I’m not glued to my computer,
@@ -17,13 +18,13 @@ const AboutMe =()=>{
             </div>
             <div className={"[&>strong]:text-[#1FD8A4]"}>
                 I am a
+                <strong>Springboot</strong> lover,
                 <strong>Next.js</strong>,
-                <strong>React Native</strong>,
-                <strong>Springboot</strong> lover, an
-                <strong>anime maniac</strong> , meme connoisseur and a
+                <strong> and React Native</strong>,
+                 developert
+                <strong>anime </strong> , meme lover and a
                 <strong>contributor</strong> to oss .
             </div>
-            <p className={"line-through "}>Not addicted to coffee</p>
 
         </div>
 
