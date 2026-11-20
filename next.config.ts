@@ -1,17 +1,29 @@
 import { withContentCollections } from "@content-collections/next";
 import type { NextConfig } from "next";
-import createMDX from '@next/mdx'
+import createMDX from "@next/mdx";
 const nextConfig: NextConfig = {
   /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.svgporn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.pinimg.com",
+      },
+    ],
+  },
   reactCompiler: true,
-    pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
 const withMDX = createMDX({
-    // Add markdown plugins here, as desired
-    options: {
-        // remarkPlugins: [remarkGfm],
-        // rehypePlugins: [],
-    },
-})
+  // Add markdown plugins here, as desired
+  options: {
+    // remarkPlugins: [remarkGfm],
+    // rehypePlugins: [],
+  },
+});
 export default withContentCollections(withMDX(nextConfig));

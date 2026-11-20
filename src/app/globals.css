@@ -112,29 +112,35 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 @layer base {
-    * {
-      @apply border-border outline-ring/50;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-    a{
-        @apply  text-sm text-[#6E6E6E];
-    }
-    a:hover{
-        @apply text-[#B4B4B4]
-    }
-    div::selection{
-        @apply bg-[#8E4EC6] text-[#EEEEEE]
-    }
-    strong{
-        @apply text-[#1FD8A4]
-    }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  a {
+    @apply text-sm text-[#6E6E6E];
+  }
+  a:hover {
+    @apply text-[#B4B4B4];
+  }
+  div::selection {
+    @apply bg-[#8E4EC6] text-[#EEEEEE];
+  }
+  strong {
+    @apply text-[#1FD8A4];
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
