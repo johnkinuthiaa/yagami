@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Header from "@/src/components/layout/header";
@@ -7,16 +6,7 @@ import Footer from "@/src/components/layout/footer";
 import Loading from "@/src/loading";
 import Target from "../components/layout/target";
 import MyProfile from "../components/layout/my-profile";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { sfPro, sfMono, sfRounded, newYork } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Yagami",
@@ -31,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full flex flex-col justify-between h-full! antialiased`}
+        className={`${sfPro.variable} ${sfMono.variable} ${sfRounded.variable} ${newYork.variable} font-sans w-full flex flex-col justify-between h-full! antialiased`}
       >
         <div
           className={

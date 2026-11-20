@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="w-full border-b border-dashed border-[#484848]">
+    <div className="w-full border-b border-dashed border-[#484848] font-sans">
       <div className="border-b border-dashed border-[#484848]">
         <div className="border-x border-dashed border-[#484848] md:w-[80%] lg:w-[40%] mx-auto px-2 flex items-center justify-between">
           <div className="text-2xl py-1 px-2 font-serif">About Me</div>
@@ -20,7 +20,7 @@ const AboutMe = () => {
               <strong>Nairobi, Kenya</strong> .
             </li>
             <li>
-              Currently learning Rust for systems and embedded development.
+              Currently learning Rust for systems & embedded development.
             </li>
             <li>
               My main goal is to end up as an a Embedded systems engineer and a
